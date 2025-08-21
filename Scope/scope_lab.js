@@ -76,7 +76,6 @@ puesto = "BI Developer Mid" // No error
 }
 
 // 3. Next, try to reassign the same variables outside the block {} and check if assignment outside the sope of variables where the variables are assigned can be done or not.
-
 nombre = "Alexandra DL" // No error
 puesto = "BI Developer Sr" // No error
 $sueldo = 40000 // No error
