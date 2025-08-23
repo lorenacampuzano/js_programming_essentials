@@ -1,3 +1,13 @@
+/*
+Summary
+
+1. Setting up the environment: Creating HTML and JavaScript files, initializing the basic HTML structure, input fields, and triggering calculation functionality.
+
+2. Defining variables and functions: Declaring variables for user input storage and crafting a calculateArea() function to process this input. Retrieving user-entered values and computing the area of a rectangle based on these values.
+
+3. Displaying calculated result: Dynamically updating the HTML content with the calculated area. Utilize JavaScript to modify specific elements within the HTML document, providing real-time feedback to the user.
+*/
+
 let length;
 let width;
 
