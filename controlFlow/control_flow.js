@@ -55,3 +55,35 @@ let isAuthenticated = true;
 let authenticationStatus = isAuthenticated ? "Authenticated" : "Not authenticated";
 
 console.log("Authentication Status:", authenticationStatus);
+
+
+// Practice task
+
+/*
+1 . Suppose an organization arranges a "Dietary Services" program to provide diets to its employees and customers, based on a person's weight and day-to-day routine. You need to create an authorization-based code to provide access to people based on their roles in organization, such as employees, enrolled members for "Dietary Services," and subscribers.
+
+*/
+
+let membershipStatus = "employee";
+let serviceAccess;
+
+switch (membershipStatus) {
+    case "employee":
+        serviceAccess = "Dietary Services";
+        break;
+    case "enrolled member":
+        serviceAccess = "Dietary Services and one-on-one interaction with a dietician"
+    case "subscriber":
+        serviceAccess = "Partial access to facilitate Dietary Services only";
+        break;
+    case "non-suscriber":
+        serviceAccess = "Need to enroll or at least subscribe first to avail this facility"
+    default:
+        serviceAccess = "Unknown";
+}
+
+/*
+You need to communicate with the user by printing a message indicating whether that person is eligible to avail which type of services.
+*/
+
+console.log("Servive Access:", serviceAccess);
