@@ -27,7 +27,9 @@ function showbooks() {
         <p><strong>Author Name:</strong> ${book.authorName}</p>
         <p><strong>Book Description:</strong> ${book.bookDescription}</p>
         <p><strong>No. of Pages:</strong> ${book.pagesNumber} page(s)</p>
-        <button onclick="editbook(${index})">Edit</button>`
+        <button onclick="editbook(${index})">Edit</button>
+        <button onclick="deleteBook(${index})">Delete</button>`
+        // Practice task: 2. You need to create a delete button as shown below. For this you need to create a deletebook function, which can include the below given partial code.
     );
     document.getElementById('books').innerHTML = booksDiv.join('');
 }
@@ -49,4 +51,17 @@ function clearInputs() {
     document.getElementById('authorName').value = '';
     document.getElementById('bookDescription').value = '';
     document.getElementById('pagesNumber').value = '';
+}
+
+/*
+Practice task
+
+1. In this practice task, you need to create a dynamic button at the time when user-entered details will be shown as output after clicking on Add Book button.
+
+3. The deletebook function will be called when the user clicks on the delete button. This function will also delete the book's detail in the management system for that particular ID.
+*/
+
+function deleteBook(index){
+    books.splice(index,1);
+    showbooks();
 }
