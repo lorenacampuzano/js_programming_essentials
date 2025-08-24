@@ -16,4 +16,19 @@ function checkCountValue() {
     } else if (count === 20) {
       alert("Your Instagram post gained 20 followers! Keep it up!");
     }
-  }
+}
+
+/*
+Practice task
+
+2. Then create one function in followers_count.js file to reset count to 0.
+
+3. Also use alert popup box method to show alert message which will say that the Followers count has been reset.
+
+*/
+
+function resetCount(){
+    count = 0;
+    displayCount();
+    alert("The followers count has been reset.") 
+}
