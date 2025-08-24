@@ -1,3 +1,13 @@
+/*
+Summary
+
+1. Setting up the environment: HTML code includes three <div> to showcase employee information based on user-triggered actions without the page dynamically reloading when clicking any buttons.
+
+2. Defining variables and functions: The map method stores employees' details in the variable totalEmployees, which shows details in the <div> element (with the help of an ID) displays employee information on the webpage while the reduce method iterates through each employee and accumulates their salaries to calculate the total.
+
+3. Checking the output: git add, git commit, and git push commands update changes into your Scope_Lab folder; GitHub repository for proper code management.
+*/
+
 // Defining variables and functions
 const employees = [
      // Practice task: 2. For this, include one more key value pair for employees array of object inside each object as shown in given screenshot (specialization).
