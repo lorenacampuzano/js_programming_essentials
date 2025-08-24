@@ -1,3 +1,13 @@
+/*
+Summary
+
+1. Book management interface: The code sets up a simple web interface for managing books. It includes input fields for book name, author name, book description, and the number of pages. Users can add books using the "Add Book" button.
+
+2. Dynamic display of books: Upon adding books, the showbooks() function dynamically generates HTML content to display the list of added books. It formats and structures the book details using JavaScript's map() function to create HTML elements for each book, including buttons for editing and deleting individual book entries.
+
+3. Book handling functionality: The code provides functionalities for editing and deleting book entries. The editbook() function allows users to edit book details by populating the input fields with the selected book’s information. Meanwhile, the deletebook() function removes a book entry from the displayed list when the corresponding delete button is clicked. Both editing and deletion actions are handled by updating the book list dynamically using the showbooks() function, which refreshes the displayed list after any change.
+*/
+
 let books = [];
 
 //Data collection and validation: The function retrieves the values entered by the user in the HTML input fields for book name, author name, book description, and number of pages. It uses document.getElementById('elementId').value to access these values. The code then checks if all fields have been filled (bookName, authorName, bookDescription) and ensures that pagesNumber is a valid number (using !isNaN(pagesNumber)). If any field is empty or if pagesNumber is not a valid number, an alert prompts the user to fill in all fields correctly.
