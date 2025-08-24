@@ -1,3 +1,15 @@
+/*
+Summary
+
+1. Setting Up the Environment: HTML structure with a header displaying the account holder's name (Peter Parker) and a follower count displayed as "0" within a span element.
+
+2. Defining Variables and Functions: A button triggers the "increaseCount()" function, incrementing the follower count when clicked, updating the displayed count dynamically, and triggering alerts at 10 and 20 follower milestones.
+
+3. Displaying Incremental Result: JavaScript functions manage the count incrementation, display of follower count on the HTML page, and the conditional display of congratulatory messages for specific follower milestones (10 and 20 followers).
+*/
+
+
+
 let count = 0; // Initialize count to 0
 
 function increaseCount() {
